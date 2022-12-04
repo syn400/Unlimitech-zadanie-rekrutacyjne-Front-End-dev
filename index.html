@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+
     <title>Unlimitech - Shopping website Task</title>
     <link rel="stylesheet" href="style.css">
   </head>
@@ -72,9 +75,8 @@
             <img src="/assets/icons/heart.svg" alt="heart icon"> Sprawdź uzupełnione bestsellery & mega rabaty na wszystkie nowości
         </h2>
     </article>
-    <!-- 
-
-    <section class="top-banners">
+    
+    <section class="top-banners container">
         <article>
             <picture>
                 <source media="(max-width: 600px)" srcset="/assets/banners/Baner1.png"/>
@@ -84,25 +86,49 @@
                 <img src="/assets/icons/Button.svg" alt="Przycisk "kupTeraz"">
             </a>
         </article>
-            
+        
         <article>
             <picture>
                 <source media="(max-width: 600px)" srcset="/assets/banners/Baner2.png"/>
                 <img src = "/assets/banners/Baner2@2x.png" alt="Baner - Kolekcja lato 2022"/>
             </picture>
-            <a href="#">
+            <a href="#" >
                 <img src="/assets/icons/Button-1.svg" alt="Przycisk "Sprawdź"">
             </a>
         </article>
     </section>
-
-    <section class="brands">
+      
+    <section class="brands container">
         <h2>Najpopularniejsi producenci</h2>
         <div>
-            <button>
-                <img src="/assets/icons/ARROW-1.svg" alt="Przycisk kierujący w lewo">
+            <button class="prev-btn">
+            <img src="/assets/icons/ARROW-1.svg" alt="Przycisk kierujący w lewo">
             </button>
-            <div>
+            <div class="brands-slider">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="/assets/logos/adidas.png"/>
+                    <img src="/assets/logos/adidas@2x.png" alt="Adidas logo">
+                </picture>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="/assets/logos/ck.png"/>
+                    <img src="/assets/logos/ck@2x.png" alt="Calvin Klein logo">
+                </picture>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="/assets/logos/columbia.png"/>
+                    <img src="/assets/logos/columbia@2x.png" alt="Columbia logo">
+                </picture>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="/assets/logos/diesel.png"/>
+                    <img src="/assets/logos/diesel@2x.png" alt="Diesel logo">
+                </picture>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="/assets/logos/dkny.png"/>
+                    <img src="/assets/logos/dkny@2x.png" alt="Dkny logo">
+                </picture>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="/assets/logos/levis.png"/>
+                    <img src="/assets/logos/levis@2x.png" alt="Levis logo">
+                </picture>
                 <picture>
                     <source media="(max-width: 600px)" srcset="/assets/logos/adidas.png"/>
                     <img src="/assets/logos/adidas@2x.png" alt="Adidas logo">
@@ -128,12 +154,13 @@
                     <img src="/assets/logos/levis@2x.png" alt="Levis logo">
                 </picture>
             </div>
-            <button>
+            <button class="next-btn">
                 <img src="/assets/icons/ARROW.svg" alt="Przycisk kierujący w prawo">
             </button>
         </div>
     </section>
-
+    <!-- 
+    
     <article class="bottom-banner">
         <picture>
             <source media="(max-width: 600px)" srcset="/assets/banners/Baner3.png"/>
@@ -224,5 +251,48 @@
     <footer>
         Unlimitech 2022
     </footer> -->
+    <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript">
+        $('.brands-slider').slick({
+            dots: false,
+            infinite: true,
+            speed: 1000,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            prevArrow: $('.prev-btn'),
+            nextArrow: $('.next-btn'),
+            slidesToShow: 6,
+            slidesToScroll: 6,
+            responsive: [
+                {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+                },
+                {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+                }
+            ]
+        });
+    </script>
   </body>
 </html>

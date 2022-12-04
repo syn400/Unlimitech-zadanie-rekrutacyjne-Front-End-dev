@@ -267,10 +267,10 @@ article.new-collection-ad {
   color: #fff;
   width: 100%;
   text-align: right;
+  overflow: hidden;
 }
 article.new-collection-ad h2 {
   animation: slide-left 50s linear infinite;
-  padding: 1rem 0;
   font-size: 1.25rem;
   animation: slide-left 28s linear infinite;
 }
@@ -290,6 +290,56 @@ article.new-collection-ad h2 img {
   position: relative;
   top: 0.3rem;
   filter: invert(43%) sepia(7%) saturate(14%) hue-rotate(356deg) brightness(97%) contrast(78%);
+}
+
+section.top-banners {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+section.top-banners article {
+  width: 49%;
+  position: relative;
+}
+section.top-banners picture img {
+  width: 100%;
+}
+section.top-banners a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 15%;
+}
+section.top-banners a img {
+  width: 21%;
+}
+
+section.brands {
+  margin-top: 3.5rem;
+}
+section.brands h2 {
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+}
+section.brands button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+section.brands button img {
+  width: 3rem;
+}
+section.brands div {
+  display: flex;
+  justify-content: space-between;
+}
+section.brands .brands-slider {
+  width: 90%;
+}
+section.brands .brands-slider img {
+  width: 12rem;
 }
 
 /*# sourceMappingURL=style.css.map */
