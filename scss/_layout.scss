@@ -1,2 +1,128 @@
-@import 'colors.scss'
+@import 'colors.scss';
+
+
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    h1 {
+        color: #fff;
+        font-size: 0.875rem;
+        background-color: #000;
+        font-weight: 700;
+        padding: 1rem 0;
+        margin: 0;
+        text-align: center;
+        & > span {
+            font-weight: 500;
+            margin-left: 3rem;
+            span {
+                color: $paleRed;
+                font-weight: 700;
+                margin-inline: 2rem .5rem;
+            }
+        }
+    }
+
+    img {
+        margin-top: 2.656rem;
+        height: 2.125rem;
+    }
+}
+
+nav {
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .user-panel {
+            button {
+                background: none;
+                border: none;
+                cursor: pointer;
+
+                &:nth-child(-n+3) {
+                    margin-right: 1.2rem;
+                }
+            }
+        }
+        .media a:nth-child(1) {
+            margin-right: 1rem;
+        }
+    }
+
+    .categories {
+        justify-content: center;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        a:nth-child(-n+3) { 
+            color: #000;
+            margin-right: 2.625rem;
+        }
+
+        .sale {
+            color: $red;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            background-color: $gray;
+            width: 10rem;
+            height: 1px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            background-color: $gray;
+            width: 10rem;
+            height: 1px;
+        }
+    }
+}
+
+article.new-collection-ad {
+    margin-top: 2.5rem;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    text-align: right;
+    h2 {
+        animation: slide-left 50s linear infinite;
+        padding: 1rem 0;
+        font-size: 1.25rem;
+
+        animation: slide-left 28s linear infinite;
+        @keyframes slide-left {
+            from {
+              -moz-transform: translateX(70%);
+              -webkit-transform: translateX(70%);
+              transform: translateX(70%);
+            }
+            to {
+              -moz-transform: translateX(-100%);
+              -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+            }
+        }
+        img {
+            position: relative;
+            top: .3rem;
+            filter: invert(43%) sepia(7%) saturate(14%) hue-rotate(356deg) brightness(97%) contrast(78%);
+        }
+    }
+}
 

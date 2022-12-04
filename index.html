@@ -7,28 +7,28 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="/assets/banners/Baner1.png" />
     <meta property="og:description" content="Nowości ze świata mody z całego świata" />
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Unlimitech - Shopping website Task</title>
-    <description>Nowości ze świata mody z całego świata</description>
-    <link rel="stylesheet" href="/scss/style.scss">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
         <h1 class="Happy-hours-bar">Happy hours tylko przez 24 godziny 
             <span>Spiesz się: 
                 <time datetime="PT0D11H51M23S">
-                    0<span>Dni</span>
-                    11<span>Godz.</span>
-                    51<span>Min.</span>
-                    23<span>Sek.</span>
+                    <span>0</span>Dni
+                    <span>11</span>Godz.
+                    <span>51</span>Min.
+                    <span>23</span>Sek.
                 </time>
             </span>
         </h1>
 
         <img class="logo" src="/assets/logos/Group 40.svg" alt="Unlimitech Logo">
     </header>
-
-    <nav>
+    <nav class="container">
         <div>
             <div class="media">
                 <a href="https://www.facebook.com/" target="_blank">
@@ -38,7 +38,7 @@
                     <img src="/assets/icons/011-instagram.svg" alt="Instagram icon">
                 </a>
             </div>
-    
+            
             <div class="user-panel">
                 <div class="user-nav">
                     <button>
@@ -57,6 +57,7 @@
                 <p><span class="products">0</span> | <span class="price">0,00</span>Zł</p>
             </div>
         </div>
+
         <div class="categories">
             <a href="/Kobiety">Kobiety</a>
             <a href="/Mezczyzni">Mężczyźni</a>
@@ -64,13 +65,14 @@
             <a class='sale' href="/Wyprzedaz">Wszystko do -60%</a>
         </div>
     </nav>
-
-    <article class="New-collection-ad">
+    
+    <article class="new-collection-ad">
         <h2>
             <img src="/assets/icons/heart.svg" alt="heart icon"> Nowa kolekcja już online 
             <img src="/assets/icons/heart.svg" alt="heart icon"> Sprawdź uzupełnione bestsellery & mega rabaty na wszystkie nowości
         </h2>
     </article>
+    <!-- 
 
     <section class="top-banners">
         <article>
@@ -221,6 +223,6 @@
 
     <footer>
         Unlimitech 2022
-    </footer>
+    </footer> -->
   </body>
 </html>
