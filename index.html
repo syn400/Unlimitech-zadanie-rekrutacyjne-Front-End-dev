@@ -1,12 +1,226 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="pl-PL">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Unlimitech - recruitment task</title>
+    <meta property="og:title" content="Unlimitech - Shopping website Task" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/banners/Baner1.png" />
+    <meta property="og:description" content="Nowości ze świata mody z całego świata" />
+    
+    <title>Unlimitech - Shopping website Task</title>
+    <description>Nowości ze świata mody z całego świata</description>
     <link rel="stylesheet" href="/scss/style.scss">
   </head>
   <body>
+    <header>
+        <h1 class="Happy-hours-bar">Happy hours tylko przez 24 godziny 
+            <span>Spiesz się: 
+                <time datetime="PT0D11H51M23S">
+                    0<span>Dni</span>
+                    11<span>Godz.</span>
+                    51<span>Min.</span>
+                    23<span>Sek.</span>
+                </time>
+            </span>
+        </h1>
+
+        <img class="logo" src="/assets/logos/Group 40.svg" alt="Unlimitech Logo">
+    </header>
+
+    <nav>
+        <div>
+            <div class="media">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="/assets/icons/001-facebook.svg" alt="Facebook icon">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="/assets/icons/011-instagram.svg" alt="Instagram icon">
+                </a>
+            </div>
     
+            <div class="user-panel">
+                <div class="user-nav">
+                    <button>
+                        <img src="/assets/icons/Search.svg" alt="Search icon">
+                    </button>
+                    <button>
+                        <img src="/assets/icons/like.svg" alt="Heart icon">
+                    </button>
+                    <button>
+                        <img src="/assets/icons/user.svg" alt="User icon">
+                    </button>
+                    <button class="cart">
+                        <img src="/assets/icons/shopping-bag.svg" alt="Shopping bag icon">
+                    </button>
+                </div>
+                <p><span class="products">0</span> | <span class="price">0,00</span>Zł</p>
+            </div>
+        </div>
+        <div class="categories">
+            <a href="/Kobiety">Kobiety</a>
+            <a href="/Mezczyzni">Mężczyźni</a>
+            <a href="/Dzieci">Dzieci</a>
+            <a class='sale' href="/Wyprzedaz">Wszystko do -60%</a>
+        </div>
+    </nav>
+
+    <article class="New-collection-ad">
+        <h2>
+            <img src="/assets/icons/heart.svg" alt="heart icon"> Nowa kolekcja już online 
+            <img src="/assets/icons/heart.svg" alt="heart icon"> Sprawdź uzupełnione bestsellery & mega rabaty na wszystkie nowości
+        </h2>
+    </article>
+
+    <section class="top-banners">
+        <article>
+            <picture>
+                <source media="(max-width: 600px)" srcset="/assets/banners/Baner1.png"/>
+                <img src = "/assets/banners/Baner1@2x.png" alt="Baner - Premiera nowości online"/>
+            </picture>
+            <a href="#">
+                <img src="/assets/icons/Button.svg" alt="Przycisk "kupTeraz"">
+            </a>
+        </article>
+            
+        <article>
+            <picture>
+                <source media="(max-width: 600px)" srcset="/assets/banners/Baner2.png"/>
+                <img src = "/assets/banners/Baner2@2x.png" alt="Baner - Kolekcja lato 2022"/>
+            </picture>
+            <a href="#">
+                <img src="/assets/icons/Button-1.svg" alt="Przycisk "Sprawdź"">
+            </a>
+        </article>
+    </section>
+
+    <section class="brands">
+        <h2>Najpopularniejsi producenci</h2>
+        <div>
+            <button>
+                <img src="/assets/icons/ARROW-1.svg" alt="Przycisk kierujący w lewo">
+            </button>
+            <div>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="/assets/logos/adidas.png"/>
+                    <img src="/assets/logos/adidas@2x.png" alt="Adidas logo">
+                </picture>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="/assets/logos/ck.png"/>
+                    <img src="/assets/logos/ck@2x.png" alt="Calvin Klein logo">
+                </picture>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="/assets/logos/columbia.png"/>
+                    <img src="/assets/logos/columbia@2x.png" alt="Columbia logo">
+                </picture>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="/assets/logos/diesel.png"/>
+                    <img src="/assets/logos/diesel@2x.png" alt="Diesel logo">
+                </picture>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="/assets/logos/dkny.png"/>
+                    <img src="/assets/logos/dkny@2x.png" alt="Dkny logo">
+                </picture>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="/assets/logos/levis.png"/>
+                    <img src="/assets/logos/levis@2x.png" alt="Levis logo">
+                </picture>
+            </div>
+            <button>
+                <img src="/assets/icons/ARROW.svg" alt="Przycisk kierujący w prawo">
+            </button>
+        </div>
+    </section>
+
+    <article class="bottom-banner">
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/banners/Baner3.png"/>
+            <img src="/assets/banners/Baner3@2x.png" alt="Wyprzedaż ubrań dla mężczyzn">
+        </picture>
+        <a href="#">
+            <img src="/assets/icons/Button-2.svg" alt="Przycisk "Dowiedz się więcej"">
+        </a>
+    </article>
+
+    <section class="discount-products">
+        <h2>Sprawdź nasze nowości w obniżonych cenach</h2>
+        <article class="AGATHE">
+            <div class="card">
+                <button>
+                    <img src="/assets/icons/like.svg" alt="Przycisk polubień">
+                </button>
+                <img src="/assets/icons/Nowość labelka.svg" alt="Nowość">
+                <p>-10%</p>
+            </div>
+            <h3>AGATHE - SATYNOWA SUKIENKA MAXI W K... </h3>
+            <h4>152,99zł <span>169,99zł</span></h4>
+            <p>UNI</p>
+        </article>
+        <article class="LUZZ">
+            <div class="card">
+                <button>
+                    <img src="/assets/icons/like.svg" alt="Przycisk polubień">
+                </button>
+                <img src="/assets/icons/Nowość labelka.svg" alt="Nowość">
+                <p>-10%</p>
+            </div>
+            <h3>LUZZ - DŁUGA SUKIENKA Z KOPERTOWYM ...</h3>
+            <h4>152,99zł <span>169,99zł</span></h4>
+            <p>UNI</p>
+        </article>
+        <article  class="AGATHE">
+            <div class="card">
+                <button>
+                    <img src="/assets/icons/like.svg" alt="Przycisk polubień">
+                </button>
+                <img src="/assets/icons/Nowość labelka.svg" alt="Nowość">
+                <p>-10%</p>
+            </div>
+            <h3>AGATHE - SATYNOWA SUKIENKA MAXI W K... </h3>
+            <h4>152,99zł <span>169,99zł</span></h4>
+            <p>UNI</p>
+        </article>
+        <article class="LUZZ">
+            <div class="card">
+                <button>
+                    <img src="/assets/icons/like.svg" alt="Przycisk polubień">
+                </button>
+                <img src="/assets/icons/Nowość labelka.svg" alt="Nowość">
+                <p>-10%</p>
+            </div>
+            <h3>LUZZ - DŁUGA SUKIENKA Z KOPERTOWYM ...</h3>
+            <h4>152,99zł <span>169,99zł</span></h4>
+            <p>UNI</p>
+        </article>
+        <article class="AGATHE">
+            <div class="card">
+                <button>
+                    <img src="/assets/icons/like.svg" alt="Przycisk polubień">
+                </button>
+                <img src="/assets/icons/Nowość labelka.svg" alt="Nowość">
+                <p>-10%</p>
+            </div>
+            <h3>AGATHE - SATYNOWA SUKIENKA MAXI W K... </h3>
+            <h4>152,99zł <span>169,99zł</span></h4>
+            <p>UNI</p>
+        </article>
+    </section>
+    
+    <section class="newsletter">
+        <div>
+            <h2>Newsletter</h2>
+            <p>Dołącz do newslettera i bądź na bieżąco ze wszystkimi <br> <span>Promocjami i nowościami</span></p>
+        </div>
+
+        <form id="newsletter">
+            <input type="email" placeholder="Twój e-mail" />
+            <input type="tel" placeholder="Telefon" />
+            <input type="submit" value="Dołącz teraz">
+        </form>
+    </section>
+
+    <footer>
+        Unlimitech 2022
+    </footer>
   </body>
 </html>
