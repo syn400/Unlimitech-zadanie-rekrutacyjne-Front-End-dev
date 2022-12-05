@@ -454,6 +454,7 @@ section.discount-products article .card button {
   width: 2.125rem;
   height: 2.125rem;
   border-radius: 2rem;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -461,17 +462,22 @@ section.discount-products article .card button {
   left: 1rem;
   top: 1.2rem;
 }
-section.discount-products article .card button img {
-  position: relative;
-  width: 1.5rem;
-  height: 1.5rem;
-  top: 0.1rem;
+section.discount-products article .card button:before {
+  content: "";
+  position: absolute;
+  width: 2.125rem;
+  height: 2.125rem;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position-x: 4px;
+  background-position-y: 7px;
+  background-image: url("/assets/icons/like-1.svg");
 }
 section.discount-products article .card button.active {
-  background-color: #668174;
+  background-color: #829b8f;
   opacity: 100%;
 }
-section.discount-products article .card button.active img {
+section.discount-products article .card button.active:before {
   filter: invert(100%) sepia(200%) saturate(10%) hue-rotate(234deg) brightness(200%) contrast(100%);
 }
 

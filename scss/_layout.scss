@@ -302,6 +302,7 @@ section.discount-products {
                 width: 2.125rem;
                 height: 2.125rem;
                 border-radius: 2rem;
+                cursor: pointer;
 
                 display: flex;
                 justify-content: center;
@@ -311,21 +312,25 @@ section.discount-products {
                 left: 1rem;
                 top: 1.2rem;
 
-                img {
-                    position: relative;
-                    width: 1.5rem;
-                    height: 1.5rem;
-                    top: .1rem;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 2.125rem;
+                    height: 2.125rem;
+                    background-repeat: no-repeat;
+                    background-size: 75%;
+                    background-position-x: 4px;
+                    background-position-y: 7px;
+                    background-image: url("/assets/icons/like-1.svg");
                 }
             }
 
             button.active {
-                background-color: #668174;
+                background-color: #829b8f;
                 opacity: 100%;
-
-                img {
-                    filter: invert(100%) sepia(200%) saturate(10%) hue-rotate(234deg) brightness(200%) contrast(100%);
-                }
+            }
+            button.active:before {
+                filter: invert(100%) sepia(200%) saturate(10%) hue-rotate(234deg) brightness(200%) contrast(100%);
             }
         }
     }
