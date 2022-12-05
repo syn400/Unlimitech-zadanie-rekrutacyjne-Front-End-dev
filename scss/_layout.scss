@@ -174,8 +174,207 @@ section.brands {
     .brands-slider {
         width: 90%;
         img {
-            width: 12rem;
+            width: 12.5rem;
+            cursor: pointer;
         }
     }
 }
+
+article.bottom-banner {
+    position: relative;
+    margin-top: 4rem;
+    width: 100%;
+    picture img {
+        width: 100%;
+    }
+    a {
+        position: absolute;
+        right: 24%;
+        bottom: 15%;
+
+        img {
+            width: 15vw;
+        }
+    }
+}
+
+section.discount-products {
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    & > div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    article {
+        &.AGATHE .card{
+            background-image: url('/assets/images/1-1@2x.png');
+            background-size: cover;
+            transition: background-image .3s ease-in-out;
+
+            &:hover {
+                background-image: url('/assets/images/1-1v2@2x.png');
+            }
+        }
+        &.LUZZ .card {
+            background-image: url('/assets/images/1-3@2x.png');
+            background-size: cover;
+            transition: background-image .3s ease-in-out;
+
+            &:hover {
+                background-image: url('/assets/images/1-3v2@2x.png');
+            }
+
+            & > img:nth-child(3) { 
+                top: 2.5rem;
+                right: 0;
+            }
+        }
+
+        text-align: center;
+
+        h3 {
+            font-weight: 500;
+            font-size: .875rem;
+        }
+        h4 {
+            font-weight: 400;
+            font-size: 1.25rem;
+            color: $red;
+            margin: 1rem 0;
+            span {
+                font-size: 1.125rem;
+                color: $gray;
+                text-decoration: line-through;
+            }
+        }
+        & > p {
+            font-size: .875rem;
+            border: 1px solid #000;
+            width: 2rem;
+            padding: .2rem .3rem;
+            margin: 0 auto;
+        }
+        .card {
+            width: 21.3rem;
+            height: 28.4rem;
+            position: relative;
+
+            p {
+                position: relative;
+                color: #fff;
+                font-size: 1.125rem;
+                font-weight: 500;
+                width: 4rem;
+                line-height: 2rem;
+                background-color: rgba(0, 0, 0, 0.497);
+                bottom: -22rem;
+            }
+
+            & > img { 
+                display: block;
+                position: absolute;
+                top: 1rem;
+                right: 0;
+            }
+
+            button {
+                opacity: 70%;
+                border: none;
+                width: 2.125rem;
+                height: 2.125rem;
+                border-radius: 2rem;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                position: absolute;
+                left: 1rem;
+                top: 1.2rem;
+
+                img {
+                    position: relative;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    top: .1rem;
+                }
+            }
+
+            button.active {
+                background-color: #668174;
+                opacity: 100%;
+
+                img {
+                    filter: invert(100%) sepia(200%) saturate(10%) hue-rotate(234deg) brightness(200%) contrast(100%);
+                }
+            }
+        }
+    }
+}
+
+section.newsletter {
+    margin-top: 8.125rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $lightGray;
+    padding: 3.375rem 0;
+    & > div {
+        h2 {
+            font-size: 4.183rem;
+            font-weight: 500;
+            color: $blue;
+            letter-spacing: 6.54px;
+            margin: 0 0 .5rem 0;
+        }
+        p {
+            margin: 0;
+            font-size: 1.125rem;
+            font-weight: 500;
+
+            span {
+                letter-spacing: .6px;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    form {
+        width: 30vw;
+        input[type="email"], input[type="tel"] {
+            box-sizing: border-box;
+            width: 100%;
+            border: 1px solid $blue;
+            padding: .4rem .8rem;
+        }
+
+        input[type="tel"] {
+            margin: 1rem 0;
+        }
+
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: .4rem .8rem;
+            font-weight: 700;
+            color: #fff;
+            background-color: #000;
+            border: none;
+        }
+    }
+}
+
+footer {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+// .discount-products {
+//     // overflow: hidden;
+// }
 

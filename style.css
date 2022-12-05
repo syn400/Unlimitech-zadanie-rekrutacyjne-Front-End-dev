@@ -339,7 +339,178 @@ section.brands .brands-slider {
   width: 90%;
 }
 section.brands .brands-slider img {
-  width: 12rem;
+  width: 12.5rem;
+  cursor: pointer;
+}
+
+article.bottom-banner {
+  position: relative;
+  margin-top: 4rem;
+  width: 100%;
+}
+article.bottom-banner picture img {
+  width: 100%;
+}
+article.bottom-banner a {
+  position: absolute;
+  right: 24%;
+  bottom: 15%;
+}
+article.bottom-banner a img {
+  width: 15vw;
+}
+
+section.discount-products h1 {
+  font-size: 1.25rem;
+}
+section.discount-products > div {
+  display: flex;
+  justify-content: space-between;
+}
+section.discount-products article {
+  text-align: center;
+}
+section.discount-products article.AGATHE .card {
+  background-image: url("/assets/images/1-1@2x.png");
+  background-size: cover;
+  transition: background-image 0.3s ease-in-out;
+}
+section.discount-products article.AGATHE .card:hover {
+  background-image: url("/assets/images/1-1v2@2x.png");
+}
+section.discount-products article.LUZZ .card {
+  background-image: url("/assets/images/1-3@2x.png");
+  background-size: cover;
+  transition: background-image 0.3s ease-in-out;
+}
+section.discount-products article.LUZZ .card:hover {
+  background-image: url("/assets/images/1-3v2@2x.png");
+}
+section.discount-products article.LUZZ .card > img:nth-child(3) {
+  top: 2.5rem;
+  right: 0;
+}
+section.discount-products article h3 {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+section.discount-products article h4 {
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #FF0102;
+  margin: 1rem 0;
+}
+section.discount-products article h4 span {
+  font-size: 1.125rem;
+  color: #939393;
+  text-decoration: line-through;
+}
+section.discount-products article > p {
+  font-size: 0.875rem;
+  border: 1px solid #000;
+  width: 2rem;
+  padding: 0.2rem 0.3rem;
+  margin: 0 auto;
+}
+section.discount-products article .card {
+  width: 21.3rem;
+  height: 28.4rem;
+  position: relative;
+}
+section.discount-products article .card p {
+  position: relative;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 500;
+  width: 4rem;
+  line-height: 2rem;
+  background-color: rgba(0, 0, 0, 0.497);
+  bottom: -22rem;
+}
+section.discount-products article .card > img {
+  display: block;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+}
+section.discount-products article .card button {
+  opacity: 70%;
+  border: none;
+  width: 2.125rem;
+  height: 2.125rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 1rem;
+  top: 1.2rem;
+}
+section.discount-products article .card button img {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 0.1rem;
+}
+section.discount-products article .card button.active {
+  background-color: #668174;
+  opacity: 100%;
+}
+section.discount-products article .card button.active img {
+  filter: invert(100%) sepia(200%) saturate(10%) hue-rotate(234deg) brightness(200%) contrast(100%);
+}
+
+section.newsletter {
+  margin-top: 8.125rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #F4F4F4;
+  padding: 3.375rem 0;
+}
+section.newsletter > div h2 {
+  font-size: 4.183rem;
+  font-weight: 500;
+  color: #0068FF;
+  letter-spacing: 6.54px;
+  margin: 0 0 0.5rem 0;
+}
+section.newsletter > div p {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+section.newsletter > div p span {
+  letter-spacing: 0.6px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+section.newsletter form {
+  width: 30vw;
+}
+section.newsletter form input[type=email], section.newsletter form input[type=tel] {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #0068FF;
+  padding: 0.4rem 0.8rem;
+}
+section.newsletter form input[type=tel] {
+  margin: 1rem 0;
+}
+section.newsletter form input[type=submit] {
+  display: block;
+  width: 100%;
+  padding: 0.4rem 0.8rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #000;
+  border: none;
+}
+
+footer {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */
