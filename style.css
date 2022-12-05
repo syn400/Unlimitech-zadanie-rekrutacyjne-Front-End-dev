@@ -338,6 +338,15 @@ section.brands div {
 section.brands .brands-slider {
   width: 90%;
 }
+section.brands .brands-slider picture {
+  display: flex;
+  justify-content: center;
+  opacity: 50%;
+  transition: opacity 0.2s ease-in-out;
+}
+section.brands .brands-slider picture:hover {
+  opacity: 200%;
+}
 section.brands .brands-slider img {
   width: 12.5rem;
   cursor: pointer;
@@ -367,8 +376,14 @@ section.discount-products > div {
   display: flex;
   justify-content: space-between;
 }
+section.discount-products .product-slider {
+  overflow: auto;
+}
 section.discount-products article {
   text-align: center;
+}
+section.discount-products article:nth-child(n+2) {
+  margin-left: 1rem;
 }
 section.discount-products article.AGATHE .card {
   background-image: url("/assets/images/1-1@2x.png");
@@ -511,6 +526,21 @@ footer {
   text-transform: uppercase;
   text-align: center;
   margin: 1rem 0;
+}
+
+@media screen and (max-width: 1280px) {
+  article.new-collection-ad {
+    display: flex;
+    justify-content: center;
+  }
+  article.new-collection-ad h2 {
+    text-align: center;
+    width: 80%;
+    animation: none;
+  }
+  article.new-collection-ad h2 span {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

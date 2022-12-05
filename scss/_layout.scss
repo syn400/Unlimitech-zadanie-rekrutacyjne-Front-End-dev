@@ -173,6 +173,15 @@ section.brands {
     
     .brands-slider {
         width: 90%;
+        picture {
+            display: flex;
+            justify-content: center;
+            opacity: 50%;
+            transition: opacity .2s ease-in-out;
+            &:hover {
+                opacity: 200%;
+            }
+        }
         img {
             width: 12.5rem;
             cursor: pointer;
@@ -208,7 +217,14 @@ section.discount-products {
         justify-content: space-between;
     }
 
+    .product-slider {
+        overflow: auto;
+    }
+
     article {
+        &:nth-child(n+2) {
+            margin-left: 1rem;
+        }
         &.AGATHE .card{
             background-image: url('/assets/images/1-1@2x.png');
             background-size: cover;
@@ -374,7 +390,19 @@ footer {
     margin: 1rem 0;
 }
 
-// .discount-products {
-//     // overflow: hidden;
-// }
+@media screen and (max-width: 1280px) {
+    article.new-collection-ad {
+        display: flex;
+        justify-content: center;
+        h2 {
+            text-align: center;
+            width: 80%;
+            animation: none;
+            span {
+                display: block;
+            }
+        }
+    }
 
+
+}

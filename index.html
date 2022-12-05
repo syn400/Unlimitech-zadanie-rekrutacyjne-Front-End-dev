@@ -21,10 +21,10 @@
         <h1 class="Happy-hours-bar">Happy hours tylko przez 24 godziny 
             <span>Spiesz się: 
                 <time datetime="PT0D11H51M23S">
-                    <span>0</span>Dni
-                    <span>11</span>Godz.
-                    <span>51</span>Min.
-                    <span>23</span>Sek.
+                    <span id="days"></span>Dni
+                    <span id="hours"></span>Godz.
+                    <span id="minutes"></span>Min.
+                    <span id="seconds"></span>Sek.
                 </time>
             </span>
         </h1>
@@ -71,8 +71,11 @@
     
     <article class="new-collection-ad">
         <h2>
-            <img src="/assets/icons/heart.svg" alt="heart icon"> Nowa kolekcja już online 
-            <img src="/assets/icons/heart.svg" alt="heart icon"> Sprawdź uzupełnione bestsellery & mega rabaty na wszystkie nowości
+            <span>
+                <img src="/assets/icons/heart.svg" alt="heart icon"> Nowa kolekcja już online 
+                <img class="br" src="/assets/icons/heart.svg" alt="heart icon"> 
+            </span>
+            Sprawdź uzupełnione bestsellery & mega rabaty na wszystkie nowości
         </h2>
     </article>
     
@@ -263,5 +266,6 @@
   crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script type="text/javascript" src="/src/slick-slider.js"></script>
+    <script type="text/javascript" src="/src/Happy Hours Timer.js"></script>
   </body>
 </html>
