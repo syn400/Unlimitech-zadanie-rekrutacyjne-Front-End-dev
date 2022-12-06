@@ -40,8 +40,7 @@ a {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 b,
@@ -221,6 +220,9 @@ header img {
   height: 2.125rem;
 }
 
+nav #menu-btn {
+  display: none;
+}
 nav div {
   display: flex;
   justify-content: space-between;
@@ -275,25 +277,19 @@ article.new-collection-ad {
   overflow: hidden;
 }
 article.new-collection-ad h2 {
-  -webkit-animation: slide-left 50s linear infinite;
-          animation: slide-left 50s linear infinite;
+  animation: slide-left 50s linear infinite;
   font-size: 1.25rem;
-  -webkit-animation: slide-left 28s linear infinite;
-          animation: slide-left 28s linear infinite;
-}
-@-webkit-keyframes slide-left {
-  from {
-    transform: translateX(70%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
+  animation: slide-left 28s linear infinite;
 }
 @keyframes slide-left {
   from {
+    -moz-transform: translateX(70%);
+    -webkit-transform: translateX(70%);
     transform: translateX(70%);
   }
   to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
   }
 }
@@ -559,8 +555,7 @@ footer {
   article.new-collection-ad h2 {
     text-align: center;
     width: 80%;
-    -webkit-animation: none;
-            animation: none;
+    animation: none;
   }
   article.new-collection-ad h2 span {
     display: block;
@@ -569,6 +564,39 @@ footer {
 @media screen and (max-width: 1100px) {
   nav {
     width: 80%;
+  }
+  nav #menu-btn {
+    cursor: pointer;
+    display: block;
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: #0068FF;
+    margin-right: 1.2rem;
+  }
+  nav #menu-btn::before, nav #menu-btn::after {
+    content: "";
+    position: relative;
+    display: block;
+    background-color: #0068FF;
+    width: 2.5rem;
+    height: 0.3rem;
+  }
+  nav #menu-btn::before {
+    top: 0.9rem;
+  }
+  nav #menu-btn:after {
+    bottom: 1.2rem;
+  }
+  nav #menu-btn.menu:before {
+    transform: rotate(45deg);
+    top: -0.1rem;
+  }
+  nav #menu-btn.menu:after {
+    transform: rotate(-45deg);
+    top: -0.4rem;
+  }
+  nav #menu-btn.menu {
+    height: 0;
   }
   nav img {
     width: 2.5rem;
@@ -601,11 +629,27 @@ footer {
     width: 0;
     height: 0;
   }
+  nav .categories.menu {
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 3rem 0;
+    z-index: 12;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  nav .categories.menu a {
+    font-weight: 500;
+    font-size: 4vw;
+  }
+  nav .categories.menu a:nth-child(-n+3) {
+    color: #fff;
+    margin: 0 0 2rem 0;
+  }
   nav .categories {
     display: none;
-  }
-  nav .categories.visible {
-    display: block;
   }
   section.top-banners {
     flex-direction: column;
@@ -653,6 +697,18 @@ footer {
   nav img {
     width: 1.3rem;
   }
+  nav #menu-btn {
+    transform: scale(0.5);
+    margin-bottom: 0.2rem;
+    margin-right: 0.4rem;
+  }
+  section.discount-products article .card {
+    width: 17rem;
+    height: 22.7rem;
+  }
+  section.discount-products article .card p {
+    top: 15rem;
+  }
   section.discount-products article.AGATHE .card {
     background-image: url("/assets/images/1-1.png");
   }
@@ -683,4 +739,6 @@ footer {
   section.newsletter {
     margin-top: 2.5rem;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -25,3 +25,11 @@ submitNewsletter.addEventListener('click', e => {
     ) === null ? email.classList.add('active') : email.classList.remove('active');
     phone.value.match('^[0-9]*$') === null || phone.value === '' ? phone.classList.add('active') : phone.classList.remove('active');
 })
+
+// hamburger 
+let menuBtn = document.getElementById('menu-btn');
+let menu = document.querySelector('div.categories');
+menuBtn.addEventListener('click', ()=>{
+    menu.classList.toggle('menu');
+    menuBtn.classList.toggle('menu');
+})
