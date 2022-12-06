@@ -3,6 +3,10 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+button:focus, input:focus {
+  outline: 0;
+}
+
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -514,6 +518,9 @@ section.newsletter form input[type=email], section.newsletter form input[type=te
   width: 100%;
   border: 1px solid #0068FF;
   padding: 0.4rem 0.8rem;
+}
+section.newsletter form input[type=email].active, section.newsletter form input[type=tel].active {
+  border: 1px solid #FF0102;
 }
 section.newsletter form input[type=tel] {
   margin: 1rem 0;

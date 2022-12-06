@@ -371,6 +371,9 @@ section.newsletter {
             width: 100%;
             border: 1px solid $blue;
             padding: .4rem .8rem;
+            &.active {
+                border: 1px solid $red;
+            }
         }
 
         input[type="tel"] {
