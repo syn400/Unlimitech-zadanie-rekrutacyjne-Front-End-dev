@@ -542,6 +542,7 @@ section.newsletter form input[type=submit] {
   color: #fff;
   background-color: #000;
   border: none;
+  cursor: pointer;
 }
 
 footer {
