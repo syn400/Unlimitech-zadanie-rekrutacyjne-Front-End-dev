@@ -229,23 +229,23 @@ section.discount-products {
             margin-left: 1rem;
         }
         &.AGATHE .card{
-            background-image: url('/assets/images/1-1@2x.png');
+            background-image: url('assets/images/1-1@2x.png');
             background-size: contain;
             background-repeat: no-repeat;
             transition: background-image .3s ease-in-out;
 
             &:hover {
-                background-image: url('/assets/images/1-1v2@2x.png');
+                background-image: url('assets/images/1-1v2@2x.png');
             }
         }
         &.LUZZ .card {
-            background-image: url('/assets/images/1-3@2x.png');
+            background-image: url('assets/images/1-3@2x.png');
             background-size: contain;
             background-repeat: no-repeat;
             transition: background-image .3s ease-in-out;
 
             &:hover {
-                background-image: url('/assets/images/1-3v2@2x.png');
+                background-image: url('assets/images/1-3v2@2x.png');
             }
 
             & > img:nth-child(3) { 
@@ -326,7 +326,7 @@ section.discount-products {
                     background-size: 75%;
                     background-position-x: 4px;
                     background-position-y: 7px;
-                    background-image: url("/assets/icons/like-1.svg");
+                    background-image: url("assets/icons/like-1.svg");
                 }
             }
 
@@ -607,16 +607,16 @@ footer {
                 }
             }
             &.AGATHE .card{
-                background-image: url('/assets/images/1-1.png');
+                background-image: url('assets/images/1-1.png');
     
                 &:hover {
-                    background-image: url('/assets/images/1-1v2.png');
+                    background-image: url('assets/images/1-1v2.png');
                 }
             }
             &.LUZZ .card {
-                background-image: url('/assets/images/1-3.png');
+                background-image: url('assets/images/1-3.png');
                 &:hover {
-                    background-image: url('/assets/images/1-3v2.png');
+                    background-image: url('assets/images/1-3v2.png');
                 }
             }
         }

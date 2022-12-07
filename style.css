@@ -40,7 +40,8 @@ a {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 b,
@@ -277,19 +278,25 @@ article.new-collection-ad {
   overflow: hidden;
 }
 article.new-collection-ad h2 {
-  animation: slide-left 50s linear infinite;
+  -webkit-animation: slide-left 50s linear infinite;
+          animation: slide-left 50s linear infinite;
   font-size: 1.25rem;
-  animation: slide-left 28s linear infinite;
+  -webkit-animation: slide-left 28s linear infinite;
+          animation: slide-left 28s linear infinite;
 }
-@keyframes slide-left {
+@-webkit-keyframes slide-left {
   from {
-    -moz-transform: translateX(70%);
-    -webkit-transform: translateX(70%);
     transform: translateX(70%);
   }
   to {
-    -moz-transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+@keyframes slide-left {
+  from {
+    transform: translateX(70%);
+  }
+  to {
     transform: translateX(-100%);
   }
 }
@@ -393,22 +400,22 @@ section.discount-products article:nth-child(n+2) {
   margin-left: 1rem;
 }
 section.discount-products article.AGATHE .card {
-  background-image: url("/assets/images/1-1@2x.png");
+  background-image: url("assets/images/1-1@2x.png");
   background-size: contain;
   background-repeat: no-repeat;
   transition: background-image 0.3s ease-in-out;
 }
 section.discount-products article.AGATHE .card:hover {
-  background-image: url("/assets/images/1-1v2@2x.png");
+  background-image: url("assets/images/1-1v2@2x.png");
 }
 section.discount-products article.LUZZ .card {
-  background-image: url("/assets/images/1-3@2x.png");
+  background-image: url("assets/images/1-3@2x.png");
   background-size: contain;
   background-repeat: no-repeat;
   transition: background-image 0.3s ease-in-out;
 }
 section.discount-products article.LUZZ .card:hover {
-  background-image: url("/assets/images/1-3v2@2x.png");
+  background-image: url("assets/images/1-3v2@2x.png");
 }
 section.discount-products article.LUZZ .card > img:nth-child(3) {
   top: 2.5rem;
@@ -480,7 +487,7 @@ section.discount-products article .card button:before {
   background-size: 75%;
   background-position-x: 4px;
   background-position-y: 7px;
-  background-image: url("/assets/icons/like-1.svg");
+  background-image: url("assets/icons/like-1.svg");
 }
 section.discount-products article .card button.active {
   background-color: #829b8f;
@@ -555,7 +562,8 @@ footer {
   article.new-collection-ad h2 {
     text-align: center;
     width: 80%;
-    animation: none;
+    -webkit-animation: none;
+            animation: none;
   }
   article.new-collection-ad h2 span {
     display: block;
@@ -710,16 +718,16 @@ footer {
     top: 15rem;
   }
   section.discount-products article.AGATHE .card {
-    background-image: url("/assets/images/1-1.png");
+    background-image: url("assets/images/1-1.png");
   }
   section.discount-products article.AGATHE .card:hover {
-    background-image: url("/assets/images/1-1v2.png");
+    background-image: url("assets/images/1-1v2.png");
   }
   section.discount-products article.LUZZ .card {
-    background-image: url("/assets/images/1-3.png");
+    background-image: url("assets/images/1-3.png");
   }
   section.discount-products article.LUZZ .card:hover {
-    background-image: url("/assets/images/1-3v2.png");
+    background-image: url("assets/images/1-3v2.png");
   }
   section.brands .brands-slider {
     width: 60%;
@@ -739,6 +747,4 @@ footer {
   section.newsletter {
     margin-top: 2.5rem;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
